@@ -62,3 +62,7 @@ h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.open-source,
+.open-source-name {
+  font-size: 13px;
+}
