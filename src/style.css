@@ -1,33 +1,24 @@
-body {
-  border: solid 5px #4aa5a8;
-  margin: 20px 20px;
-  max-width: 500px;
-}
 
 #search-form {
   width: 350px;
 }
 .container {
-  background-image: linear-gradient(
-    to bottom,
-    #ffffff,
-    #fdfeff,
-    #fafdff,
-    #f6fcff,
-    #f2fcff,
-    #e3f5f8,
-    #d4edf0,
-    #c6e6e6,
-    #a9d6d6,
-    #8cc5c6,
-    #6db5b7,
-    #4aa5a8
+  margin-top: 20px;
+  background-image: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(208,206,206,1) 100%);
   );
-  max-width: 700px;
+  max-width: 450px;
+  border-radius: 20px;
+  border: solid 2.5px #9aa5a5;
+  box-shadow: 3px 3px 3px #9aa5a5;
 }
 .icons {
   width: 60px;
   margin-bottom: 15px;
+}
+.icon1 {
+  width: 120px;
+position: relative;
+left:160px;
 }
 .col-2,
 .col-6 {
@@ -44,10 +35,24 @@ body {
   margin-top: 12px;
 }
 h1 {
-  text-align: center;
-  margin: 15px;
+  text-align: left;
+  margin: 15px; 
+  margin-bottom: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+#currentTime {
+  text-align: left;
+  margin: 0 15px;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+#currentTemp {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 .btn-outline-success {
   background-color: #4aa5a8;
@@ -62,7 +67,14 @@ h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.open-source,
+
+.open-source {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+}
 .open-source-name {
   font-size: 13px;
+  display: block;
+  text-align: center;
 }
