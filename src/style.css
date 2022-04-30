@@ -42,9 +42,13 @@ h1 {
   text-align: left;
   margin: 0 15px;
   font-size: medium;
-  margin-bottom: 20px;
 }
 
+#description {
+  text-align: left;
+  margin-bottom: 20px;
+  margin: 0 15px;
+}
 #currentTemp {
   text-align: center;
   font-size: 45px;
@@ -52,12 +56,15 @@ h1 {
 
 .units {
   font-size: 20px;
-  position: relative;
-  top: -17px;
+text-align: center;
+position: relative;
+left: 55px;
+bottom: 55px;
 }
-.description {
-  text-align: center;
-  margin-bottom: 20px;
+.conditions {
+position: relative;
+bottom: 30px;
+left: 110px;
 }
 .btn-outline-success {
   background-color: #4aa5a8;
