@@ -17,12 +17,12 @@ body {
   width: 60px;
   margin-bottom: 15px;
 }
-.icon1 {
-  width: 120px;
-position: relative;
-left:160px;
-}
 
+#icon1 {
+  width: 40%;
+  margin: 0 auto;
+
+}
 .col-6 {
   font-size: 18px;
   margin-top: 20px;
@@ -48,6 +48,10 @@ h1 {
   text-align: left;
   margin-bottom: 20px;
   margin: 0 15px;
+
+}
+#description:first-letter {
+  text-transform: capitalize;
 }
 #currentTemp {
   text-align: center;
