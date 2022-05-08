@@ -26,6 +26,7 @@ function showTemperature(response) {
   document.querySelector("#currentTemp").innerHTML = `${Math.round(
     response.data.main.temp
   )}`;
+  celsiusTemperature = response.data.main.temp;
   let description = document.querySelector("#description");
   let humidity = document.querySelector("#humidity");
   let wind = document.querySelector("#wind");
@@ -39,14 +40,38 @@ function showTemperature(response) {
   );
   icon1.setAttribute("alt", response.data.weather[0].description);
 }
-
-function displayCity(event) {
-  event.preventDefault();
+function search(city) {
   let apiKey = "89bde6acca90144869bd1ea9198ba1b2";
-  let city = document.querySelector("#search-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
 
+function displayCity(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-input");
+  search(city.value);
+}
+
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperature = document.querySelector("#currentTemp");
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+let celsiusTemperature = null;
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#currentTemp");
+  temperature.innerHTML = Math.round(celsiusTemperature);
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", displayCity);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemperature);
+search("Amsterdam");

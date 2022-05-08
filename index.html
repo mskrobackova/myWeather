@@ -19,16 +19,24 @@
       <div class="row">
         <div class="input-group">
           <form id="search-form">
-            <input
-              type="Search"
-              class="form-control rounded"
-              placeholder="Your city.."
-              aria-label="Search"
-              aria-describedby="search-addon"
-              id="search-input"
-            />
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="Search"
+                  class="form-control rounded"
+                  placeholder="Your city.."
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                  id="search-input"
+                />
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-outline-success">
+                  Search
+                </button>
+              </div>
+            </div>
           </form>
-          <button type="button" class="btn btn-outline-success">Search</button>
         </div>
         <h1 id="city">Amsterdam</h1>
         <h2 id="currentTime">Mon 10:09AM</h2>
@@ -36,7 +44,15 @@
         <img id="icon1" src="http://openweathermap.org/img/wn/10d@2x.png" />
         <div id="currentTemp">14</div>
         <div class="units">
-          °C|<a href="farenheit" style="text-decoration: none">°F</a>
+          <a href="celsius" id="celsius-link" style="text-decoration: none">
+            °C|</a
+          >
+          <a
+            href="fahrenheit"
+            id="fahrenheit-link"
+            style="text-decoration: none"
+            >°F</a
+          >
         </div>
         <div class="conditions">
           Humidity: <span id="humidity">70</span>% - Wind:

@@ -2,7 +2,8 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 #search-form {
-  width: 350px;
+  margin: 15px 0;
+  width: 450px;
 }
 .container {
   margin-top: 20px;
@@ -15,22 +16,22 @@ body {
 }
 .icons {
   width: 60px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 #icon1 {
-  width: 40%;
+  width: 35%;
   margin: 0 auto;
 
 }
 .col-6 {
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .col-2 {
   font-weight: bold;
   font-size: 24px;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 h1 {
   text-align: left;
@@ -71,12 +72,16 @@ bottom: 30px;
 left: 110px;
 }
 .btn-outline-success {
-  background-color: #4aa5a8;
+  background-color: #719EDF;
   color: white;
   border: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.btn-outline-success:hover {
+  background-color: #4987dd;
+}
+.btn-outline-success:click 
 .input-group {
   margin-bottom: 20px;
   margin-top: 20px;
