@@ -19,11 +19,12 @@ body {
 }
 
 #icon1 {
-  width: 35%;
+  width: 30%;
   margin: 0 auto;
 
 }
 h1 {
+  font-size: 30px;
   text-align: left;
   margin: 15px; 
   margin-bottom: 0;
@@ -37,7 +38,6 @@ h1 {
 
 #description {
   text-align: left;
-  margin-bottom: 20px;
   margin: 0 15px;
 
 }
@@ -45,16 +45,17 @@ h1 {
   text-transform: capitalize;
 }
 #currentTemp {
-  text-align: center;
   font-size: 45px;
+  position: relative;
+  left: 180px;
 }
 
 .units {
   font-size: 20px;
 text-align: center;
 position: relative;
-left: 55px;
-bottom: 55px;
+left: 50px;
+bottom: 60px;
 }
 .conditions {
 position: relative;
@@ -83,14 +84,10 @@ left: 110px;
   font-size: 13px;
   display: block;
   text-align: center;
-  margin-top: 5px;
-}
-.open-source-name {
-  font-size: 13px;
-  display: block;
-  text-align: center;
+  margin-top: 20px;
 }
 #forecast {
+  margin-top: 10px;
   margin-left: 25px;
 }
 .weather-forecast-date {
