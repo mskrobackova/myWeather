@@ -90,7 +90,15 @@ left: 110px;
   display: block;
   text-align: center;
 }
-
+#forecast {
+  margin-left: 25px;
+}
 .weather-forecast-date {
-  margin-left: 20px;
+margin-left: 22px;
+}
+.weather-forecast-max {
+  margin-left: 15px;
+}
+.weather-forecast-min {
+  opacity: 0.7;
 }
