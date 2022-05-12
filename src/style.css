@@ -14,24 +14,14 @@ body {
   border: solid 2.5px #9aa5a5;
   box-shadow: 3px 3px 3px #9aa5a5;
 }
-.icons {
-  width: 60px;
-  margin-bottom: 8px;
+#icons {
+  width: 70px;
 }
 
 #icon1 {
   width: 35%;
   margin: 0 auto;
 
-}
-.col-6 {
-  font-size: 18px;
-  margin-top: 15px;
-}
-.col-2 {
-  font-weight: bold;
-  font-size: 24px;
-  margin-top: 8px;
 }
 h1 {
   text-align: left;
@@ -99,4 +89,8 @@ left: 110px;
   font-size: 13px;
   display: block;
   text-align: center;
+}
+
+.weather-forecast-date {
+  margin-left: 20px;
 }
