@@ -66,6 +66,30 @@ function showCelsiusTemperature(event) {
   temperature.innerHTML = Math.round(celsiusTemperature);
 }
 
+function displayForecast() {
+  let futureForecast = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+              <div class="weather-forecast-date">${day}</div>
+              <img
+                id="icons"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+              />
+              <div class="weather-forecast-max">12/<small class="weather-forecast-max">10</small>°C
+            </div>
+        </div>
+    `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  futureForecast.innerHTML = forecastHTML;
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", displayCity);
 
@@ -75,3 +99,4 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 search("Amsterdam");
+displayForecast();
